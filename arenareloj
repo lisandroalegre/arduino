@@ -1,0 +1,100 @@
+int led1=2;
+int led2=3;
+int led3=6;
+int led4=8;
+int led5=9;
+int led6=13;
+int led7=12;
+int led8=11;
+int led9=10;
+int led10=7;
+int led11=5;
+int led12=4;
+
+int tiempo=60;
+
+void setup() {
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+  pinMode(led5, OUTPUT);
+  pinMode(led6, OUTPUT);
+  pinMode(led7, OUTPUT);
+  pinMode(led8, OUTPUT);
+  pinMode(led9, OUTPUT);
+  pinMode(led10, OUTPUT);
+  pinMode(led11, OUTPUT);
+  pinMode(led12, OUTPUT);
+}
+
+void loop() {
+  
+  if (tiempo >= 55) {
+    digitalWrite(led1, HIGH);
+  } else {
+    digitalWrite(led1, LOW);
+  }
+
+  if (tiempo >= 50) {
+    digitalWrite(led2, HIGH);
+  } else {
+    digitalWrite(led2, LOW);
+  }
+
+  if (tiempo >= 45) {
+    digitalWrite(led3, HIGH);
+  } else {
+    digitalWrite(led3, LOW);
+  }
+
+  if (tiempo >= 40) {
+    digitalWrite(led4, HIGH);
+  } else {
+    digitalWrite(led4, LOW);
+  }
+  if (tiempo >= 35) {
+    digitalWrite(led5, HIGH);
+  } else {
+    digitalWrite(led5, LOW);
+  }
+  if (tiempo >= 30) {
+    digitalWrite(led6, HIGH);
+  } else {
+    digitalWrite(led6, LOW);
+  }
+  if (tiempo >= 25) {
+    digitalWrite(led7, HIGH);
+  } else {
+    digitalWrite(led7, LOW);
+  }
+  if (tiempo >= 20) {
+    digitalWrite(led8, HIGH);
+  } else {
+    digitalWrite(led8, LOW);
+  }
+  if (tiempo >= 15) {
+    digitalWrite(led9, HIGH);
+  } else {
+    digitalWrite(led9, LOW);
+  }
+  if (tiempo >= 10) {
+    digitalWrite(led10, HIGH);
+  } else {
+    digitalWrite(led10, LOW);
+  }
+  if (tiempo >= 5) {
+    digitalWrite(led11, HIGH);
+  } else {
+    digitalWrite(led11, LOW);
+  }
+  if (tiempo >= 0) {
+    digitalWrite(led12, HIGH);
+  } else {
+    digitalWrite(led12, LOW);
+  }
+
+  tiempo--;
+  delay(1000);
+  
+}
